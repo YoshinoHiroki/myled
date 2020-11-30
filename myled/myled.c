@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2020 Hiroki Yoshino. All rights reserved.
+ * Copyright (C) 2020 HirokiYoshino and RyuichiUeda. All rights reserved.
  */
 
 #include <linux/module.h>
@@ -11,7 +11,7 @@
 #include <linux/io.h>
 #include <linux/delay.h>
 
-MODULE_AUTHOR("Ryuichi Ueda & Hiroki Yoshino");
+MODULE_AUTHOR("Ryuichi Ueda and Hiroki Yoshino");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
