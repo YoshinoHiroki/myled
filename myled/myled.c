@@ -46,7 +46,7 @@ static ssize_t led_write(struct file* flip, const char* buf, size_t count, loff_
 		gpio_base[7] = 1 << 25;
 		ssleep(1);
 		gpio_base[10] = 1 << 25;
-	}
+		}
 	}else if(c == '5'){
 		for(i=0;i<3;i++){
 		gpio_base[7] = 1 << 24;
@@ -56,8 +56,6 @@ static ssize_t led_write(struct file* flip, const char* buf, size_t count, loff_
 		}
 		gpio_base[7] = 1 << 25;
 	}	
-	
-	
 	
 	return 1;
 }
@@ -120,7 +118,6 @@ static int __init init_mod(void)
 	const u32 shift2 = (led2%10)*3;
 	const u32 mask2 = ~(0x7<<shift2);
 	gpio_base[index2] = (gpio_base[index2] & mask2 ) | (0x1 << shift2);
-
 
 	return 0;
 }
